@@ -490,21 +490,6 @@
   })
 </script>
 
-<script>
-(function(){
-  var threshold = {{ settings.altrd_header_scroll_threshold | default: 80 }};
-  function onScroll(){
-    if(window.scrollY > threshold){
-      document.body.classList.add('header-scrolled');
-    } else {
-      document.body.classList.remove('header-scrolled');
-    }
-  }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-})();
-</script>
-
 {% schema %}
 {
   "name": "Header",
