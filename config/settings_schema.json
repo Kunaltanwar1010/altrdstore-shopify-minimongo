@@ -2756,5 +2756,189 @@
         "default": false
       }
     ]
+  },
+  {
+    "name": "Altrd Brand",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand Colors"
+      },
+      {
+        "type": "color",
+        "id": "altrd_color_black",
+        "label": "Primary (Black)",
+        "default": "#0A0A0A",
+        "info": "Buttons, badges, nav on scroll, variant pickers"
+      },
+      {
+        "type": "color",
+        "id": "altrd_color_white",
+        "label": "Brand Cream",
+        "default": "#F5F0EB",
+        "info": "Hero text, button labels, footer text"
+      },
+      {
+        "type": "color",
+        "id": "altrd_color_gray_dark",
+        "label": "Dark Gray (hover states)",
+        "default": "#1A1A1A"
+      },
+      {
+        "type": "color",
+        "id": "altrd_color_gray_light",
+        "label": "Light Gray (card image background)",
+        "default": "#F0EDE8"
+      },
+      {
+        "type": "color",
+        "id": "altrd_color_muted",
+        "label": "Muted / Compare Price",
+        "default": "#888888"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "altrd_header_bg_top",
+        "label": "Header color at top of page",
+        "default": "#0A0A0A",
+        "info": "The base color for the glass header before scrolling"
+      },
+      {
+        "type": "range",
+        "id": "altrd_header_bg_top_opacity",
+        "label": "Header opacity at top (%)",
+        "min": 0,
+        "max": 80,
+        "step": 5,
+        "default": 15,
+        "info": "Lower = more transparent. 0 = fully invisible background"
+      },
+      {
+        "type": "color",
+        "id": "altrd_header_bg_scrolled",
+        "label": "Header color when scrolled",
+        "default": "#F5F0EB"
+      },
+      {
+        "type": "range",
+        "id": "altrd_header_scroll_threshold",
+        "label": "Scroll threshold (px)",
+        "min": 20,
+        "max": 300,
+        "step": 10,
+        "default": 80,
+        "info": "How far the user scrolls before the header switches style"
+      },
+      {
+        "type": "header",
+        "content": "Announcement Bar"
+      },
+      {
+        "type": "color",
+        "id": "altrd_announce_bg",
+        "label": "Announcement bar background",
+        "default": "#0A0A0A"
+      },
+      {
+        "type": "color",
+        "id": "altrd_announce_text",
+        "label": "Announcement bar text color",
+        "default": "#F5F0EB"
+      },
+      {
+        "type": "header",
+        "content": "Marquee Strip"
+      },
+      {
+        "type": "text",
+        "id": "altrd_marquee_text",
+        "label": "Marquee text",
+        "default": "DROP CULTURE · NO APOLOGIES ✦ WEAR THE SHIFT ✦ LIMITED PIECES ✦ FREE SHIPPING ✦ ALTRD STORE ✦ NOT FOR EVERYONE ✦ NEW DROP LIVE ✦",
+        "info": "Text repeated across the scrolling strip below the hero"
+      },
+      {
+        "type": "range",
+        "id": "altrd_marquee_speed",
+        "label": "Marquee scroll speed (seconds)",
+        "min": 10,
+        "max": 80,
+        "step": 5,
+        "default": 30,
+        "info": "Lower number = faster scroll"
+      },
+      {
+        "type": "color",
+        "id": "altrd_marquee_bg",
+        "label": "Marquee background",
+        "default": "#0A0A0A"
+      },
+      {
+        "type": "color",
+        "id": "altrd_marquee_text_color",
+        "label": "Marquee text color",
+        "default": "#F5F0EB"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "altrd_footer_bg",
+        "label": "Footer background",
+        "default": "#0A0A0A"
+      },
+      {
+        "type": "color",
+        "id": "altrd_footer_text",
+        "label": "Footer text / link color",
+        "default": "#F5F0EB"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "id": "altrd_btn_bg",
+        "label": "Button background",
+        "default": "#0A0A0A"
+      },
+      {
+        "type": "color",
+        "id": "altrd_btn_text",
+        "label": "Button text color",
+        "default": "#F5F0EB"
+      },
+      {
+        "type": "color",
+        "id": "altrd_btn_bg_hover",
+        "label": "Button hover background",
+        "default": "#1A1A1A"
+      },
+      {
+        "type": "header",
+        "content": "Scroll Reveal Animation"
+      },
+      {
+        "type": "checkbox",
+        "id": "altrd_scroll_reveal",
+        "label": "Enable scroll reveal animations",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "altrd_reveal_duration",
+        "label": "Reveal animation duration (ms)",
+        "min": 200,
+        "max": 1200,
+        "step": 50,
+        "default": 650
+      }
+    ]
   }
 ]

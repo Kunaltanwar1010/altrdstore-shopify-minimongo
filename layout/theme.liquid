@@ -58,6 +58,53 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    {% liquid
+      assign altrd_br = settings.altrd_color_black | color_extract: 'red'
+      assign altrd_bg = settings.altrd_color_black | color_extract: 'green'
+      assign altrd_bb = settings.altrd_color_black | color_extract: 'blue'
+      assign altrd_wr = settings.altrd_color_white | color_extract: 'red'
+      assign altrd_wg = settings.altrd_color_white | color_extract: 'green'
+      assign altrd_wb = settings.altrd_color_white | color_extract: 'blue'
+      assign altrd_htr = settings.altrd_header_bg_top | color_extract: 'red'
+      assign altrd_htg = settings.altrd_header_bg_top | color_extract: 'green'
+      assign altrd_htb = settings.altrd_header_bg_top | color_extract: 'blue'
+      assign altrd_hsr = settings.altrd_header_bg_scrolled | color_extract: 'red'
+      assign altrd_hsg = settings.altrd_header_bg_scrolled | color_extract: 'green'
+      assign altrd_hsb = settings.altrd_header_bg_scrolled | color_extract: 'blue'
+      assign altrd_ftr = settings.altrd_footer_text | color_extract: 'red'
+      assign altrd_ftg = settings.altrd_footer_text | color_extract: 'green'
+      assign altrd_ftb = settings.altrd_footer_text | color_extract: 'blue'
+      assign altrd_ht_opacity = settings.altrd_header_bg_top_opacity | divided_by: 100.0
+    %}
+    {% style %}
+      :root {
+        --altrd-black: {{ settings.altrd_color_black }};
+        --altrd-black-rgb: {{ altrd_br }}, {{ altrd_bg }}, {{ altrd_bb }};
+        --altrd-white: {{ settings.altrd_color_white }};
+        --altrd-white-rgb: {{ altrd_wr }}, {{ altrd_wg }}, {{ altrd_wb }};
+        --altrd-gray-dark: {{ settings.altrd_color_gray_dark }};
+        --altrd-gray-light: {{ settings.altrd_color_gray_light }};
+        --altrd-muted: {{ settings.altrd_color_muted }};
+        --altrd-border-light: rgba(0,0,0,0.08);
+        --altrd-border-dark: rgba(255,255,255,0.10);
+        --altrd-header-top-rgb: {{ altrd_htr }}, {{ altrd_htg }}, {{ altrd_htb }};
+        --altrd-header-top-opacity: {{ altrd_ht_opacity }};
+        --altrd-header-scrolled-rgb: {{ altrd_hsr }}, {{ altrd_hsg }}, {{ altrd_hsb }};
+        --altrd-announce-bg: {{ settings.altrd_announce_bg }};
+        --altrd-announce-text: {{ settings.altrd_announce_text }};
+        --altrd-marquee-bg: {{ settings.altrd_marquee_bg }};
+        --altrd-marquee-text-color: {{ settings.altrd_marquee_text_color }};
+        --altrd-marquee-speed: {{ settings.altrd_marquee_speed }}s;
+        --altrd-footer-bg: {{ settings.altrd_footer_bg }};
+        --altrd-footer-text: {{ settings.altrd_footer_text }};
+        --altrd-footer-text-rgb: {{ altrd_ftr }}, {{ altrd_ftg }}, {{ altrd_ftb }};
+        --altrd-btn-bg: {{ settings.altrd_btn_bg }};
+        --altrd-btn-text: {{ settings.altrd_btn_text }};
+        --altrd-btn-bg-hover: {{ settings.altrd_btn_bg_hover }};
+        --altrd-reveal-duration: {{ settings.altrd_reveal_duration }}ms;
+      }
+    {% endstyle %}
+
     {{ content_for_header }}
   </head>
 
