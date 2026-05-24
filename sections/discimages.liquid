@@ -1,0 +1,193 @@
+<style type="text/css">
+  .offer-zone {
+    width: 100%;
+    float: left;
+}
+		.offer-zone-sub.page-width {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+			.offer-images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sub-offer-image {
+    width: 33.33%;
+    float: left;
+}
+.sub-offer-image img {
+    width: 100%;
+}
+.offer-heading h2 {
+   text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    
+}
+.offer-heading {
+    width: 100%;
+    position: relative;
+}
+
+.offer-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    background-image: url(6.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 35px;
+    background-size: contain;
+}
+
+.offer-heading h2::after {
+    content: "";
+    position: absolute;
+    right: 25%;
+    background-image: url(8.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 35px;
+    background-size: contain;
+}
+@media(max-width:767px){
+
+	.offer-heading h2::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    background-image: url(8.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 15px;
+    background-size: contain;
+    transform: translateX(25px);
+}
+.offer-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    background-image: url(6.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 15px;
+    background-size: contain;
+}
+
+.offer-heading h2 {
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 42px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+	}
+
+
+@media (min-width:768px) and (max-width:992px){
+
+	.offer-heading h2::after {
+    content: "";
+    position: absolute;
+    right:24%;
+    background-image: url(8.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 15px;
+    background-size: contain;
+    transform: translateX(25px);
+}
+.offer-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 26%;
+    background-image: url(6.png);
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 15px;
+    background-size: contain;
+}
+
+.offer-heading h2 {
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 52px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+	}
+
+	</style>
+<div class="offer-zone">
+   <div class="offer-zone-main">
+    <div class="offer-zone-sub page-width">
+    	<div class="offer-heading">
+    		<h2>{{ section.settings.heading }}</h2>
+    	</div>
+    	<div class="offer-images">
+              {% for block in section.blocks %}
+             <div class="sub-offer-image">
+                <a href="{{ block.settings.link }}" id="offerlink-{{ forloop.index }}">
+                  <img src="{{ block.settings.image | img_url: 'master'}}" height="auto" width="350" id="offerimage-{{ forloop.index }}">
+                  {{  }}
+                </a>
+             </div>
+          {% endfor %}
+    	</div>
+    </div>
+ </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Discount Images",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+      "blocks" : [
+        {
+          "name": "Offers",
+          "type": "Offers",
+          "settings" : [
+            {
+              "type": "image_picker",
+                "id": "offer_image",
+                "label": "Image"
+            },
+            {
+              "type": "url",
+                "id": "offer_link",
+                "label": "Offer link"
+            }
+          ]
+        }
+      ],
+    "presets":[
+      {
+        "name": "Discount Images"
+      }
+    ]
+  }
+{% endschema %}
