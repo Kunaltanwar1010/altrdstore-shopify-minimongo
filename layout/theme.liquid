@@ -55,6 +55,9 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
       <script src="{{ 'animations.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
     {{ content_for_header }}
   </head>
 
@@ -103,5 +106,20 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
     {%- unless template == 'cart' -%}
       {% render 'cart-drawer' %}
     {%- endunless -%}
+
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.product-card, .shopify-section').forEach(el => {
+      el.classList.add('altrd-reveal');
+      observer.observe(el);
+    });
+    </script>
   </body>
 </html>

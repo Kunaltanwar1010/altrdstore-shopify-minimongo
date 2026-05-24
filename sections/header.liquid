@@ -92,7 +92,7 @@
     {% if request.design_mode == true %}
         data-design-mode="true"
     {% endif %}
-    class="sf-header"
+    class="sf-header altrd-header"
     data-transparent="{{ transparent_on_top }}"
     data-sticky="{{ section.settings.header_sticky }}"
 >
@@ -488,6 +488,20 @@
   document.addEventListener('unmatchMobile', () => {
     _calcHeights();
   })
+</script>
+
+<script>
+(function(){
+  function onScroll(){
+    if(window.scrollY > 80){
+      document.body.classList.add('header-scrolled');
+    } else {
+      document.body.classList.remove('header-scrolled');
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
 </script>
 
 {% schema %}
