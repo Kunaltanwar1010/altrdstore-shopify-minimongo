@@ -1,6 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/Untitled_design_1.png",
+    "favicon": "shopify://shop_images/Untitled_design_1.png",
     "container_width": 1200,
     "container_fluid_width": 1620,
     "container_fluid_offset": 65,
@@ -42,17 +51,17 @@
     "tooltip_background_color": "#000000",
     "type_base_font": "chakra_petch_n4",
     "use_custom_font_body": true,
-    "custom_body_font": "https:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-Regular.ttf?v=1618297125@400\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-Medium.ttf?v=1618297125@500\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-SemiBold.ttf?v=1618297125@600",
+    "custom_body_font": "https://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-Regular.ttf?v=1618297125@400\nhttps://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-Medium.ttf?v=1618297125@500\nhttps://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-SemiBold.ttf?v=1618297125@600",
     "custom_body_weight": "400",
     "type_header_font": "sans_serif_n4",
     "use_custom_font_heading": true,
-    "custom_heading_font": "https:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-Regular.ttf?v=1618297125@400\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-Medium.ttf?v=1618297125@500\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/Jost-SemiBold.ttf?v=1618297125@600",
+    "custom_heading_font": "https://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-Regular.ttf?v=1618297125@400\nhttps://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-Medium.ttf?v=1618297125@500\nhttps://cdn.shopify.com/s/files/1/0561/2742/2636/files/Jost-SemiBold.ttf?v=1618297125@600",
     "custom_heading_weight": "400",
     "type_header_base_size": 40,
     "btn_weight": "500",
     "pcard_layout": "1",
     "pcard_alignment": "left",
-    "pcard_image_ratio": "3\/4",
+    "pcard_image_ratio": "3/4",
     "show_compare_button": false,
     "on_sale_badge": "show_text",
     "show_vendor": false,
@@ -70,11 +79,11 @@
     "share_pinterest": true,
     "social_twitter_link": "",
     "social_twitter_label": "",
-    "social_facebook_link": "https:\/\/facebook.com\/",
+    "social_facebook_link": "https://facebook.com/",
     "social_facebook_label": "300k Followers",
     "social_pinterest_link": "",
     "social_pinterest_label": "",
-    "social_instagram_link": "https:\/\/instagram.com\/",
+    "social_instagram_link": "https://instagram.com/",
     "social_instagram_label": "100k Followers",
     "discount_code_enable": true,
     "show_delivery_days": true,
@@ -122,7 +131,7 @@
               "show_stores_page": false,
               "show_currency_switcher": true,
               "show_language_switcher": true,
-              "alert_message": "<span>Open Doors To A World Of Fashion  |  <a class=\"sf__text-link  ml-1 underline\" href=\"#\">Discover More<\/a><span><\/span><\/span>"
+              "alert_message": "<span>Open Doors To A World Of Fashion  |  <a class=\"sf__text-link  ml-1 underline\" href=\"#\">Discover More</a><span></span></span>"
             }
           },
           "5b9aec5f-b955-4765-9a87-1962d613e909": {
@@ -139,7 +148,7 @@
               "heading": "Shop",
               "container": "container",
               "banner_style": "outside",
-              "banner_image": "shopify:\/\/shop_images\/mega-menu-banner.jpg",
+              "banner_image": "shopify://shop_images/mega-menu-banner.jpg",
               "banner_link": "",
               "banner_title": "The New - Season Shoes Edit",
               "banner_desc": "",
@@ -217,7 +226,7 @@
             "type": "our_store",
             "settings": {
               "title": "Our store",
-              "description": "<p>Find a location nearest<br\/>you. <a href=\"#\" title=\"#\"><span style=\"text-decoration:underline\">See Our Stores<\/span><\/a><\/p>",
+              "description": "<p>Find a location nearest<br/>you. <a href=\"#\" title=\"#\"><span style=\"text-decoration:underline\">See Our Stores</span></a></p>",
               "show_email": true,
               "show_phone": true,
               "show_socials_link": false,

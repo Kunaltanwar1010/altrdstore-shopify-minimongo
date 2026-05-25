@@ -2,3 +2,38 @@
   All custom CSS in this file will be kept when updating the theme
   Write your custom CSS below
 {% endcomment %}
+
+/* ── Glassmorphism fixed header ── */
+
+/* Header wrapper: always fixed at top with glass effect */
+.header__wrapper {
+  top: 0 !important;
+  z-index: 9999 !important;
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
+}
+
+/* Inner <header> elements must be transparent so the glass wrapper shows */
+.header__wrapper header.sf-header__mobile,
+.header__wrapper header.sf-header__desktop {
+  background-color: transparent !important;
+}
+
+/* Transparent-on-top: disable glass while at page top (homepage hero) */
+.header__wrapper.transparent-on-top {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Restore glass when search overlay opens on a transparent header */
+.header__wrapper.transparent-on-top.search-box-open {
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
